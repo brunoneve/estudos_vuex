@@ -1,5 +1,6 @@
 import {Time} from '../time';
 import _ from 'lodash';
+import event from '../event';
 
 export default {
     template: `
@@ -76,8 +77,8 @@ export default {
     },
     methods: {
         ShowNovoJogo(){
-            this.$parent.showView('novoJogo');
-            this.$parent.$children[1].initJogo(this.times);
+            event.$emit('show-time-novojogo');
+            event.$emit('get-times' , this.times);
         },
         sortBy(coluna){
             this.order.keys = coluna;
