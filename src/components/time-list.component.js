@@ -54,8 +54,7 @@ export default {
     },
     methods: {
         ShowNovoJogo(){
-            event.$emit('show-time-novojogo');
-            event.$emit('get-times' , this.times);
+            store.commit('show-time-novojogo');
         },
         sortBy(coluna){
             this.order.keys = coluna;
