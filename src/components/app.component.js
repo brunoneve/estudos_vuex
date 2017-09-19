@@ -13,6 +13,10 @@ export default {
     <div class="container">
          <div class="row">
             <h3>Campeonato Brasileiro - Série A - 2016</h3>
+            <a class="btn btn-primary" @click="showTabela">Ver tabela</a>
+            <a class="btn btn-primary" @click="showNovoJogo">Novo jogo</a>
+            <a class="btn btn-primary" @click="showZona">Ver zonas</a>
+            <br/><br/>
             <div v-if="view == 'tabela'">
                 <time-list></time-list>
             </div>
@@ -29,5 +33,16 @@ export default {
         view(){
             return store.state.view;
         }
+    },
+    methods: {
+        ShowNovoJogo(){
+            store.commit('show-time-novojogo');
+        },
+        showTabela(){
+            store.commit('show-time-list');
+        },
+        showZona(){
+            store.commit('show-time-zona');
+        },
     }
 }
