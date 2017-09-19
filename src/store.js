@@ -33,5 +33,9 @@ const state = {
 };
 
 export default new Vuex.Store({
-	state
+    state,
+    getters: {
+        timesLibertadores: state => state.times.slice(0,6),
+        timesRebaixados: state => state.times.slice(12,16)
+    }
 });
