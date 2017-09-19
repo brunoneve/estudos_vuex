@@ -9,10 +9,10 @@ export default {
     <div class="container">
          <div class="row">
             <h3>Campeonato Brasileiro - Série A - 2016</h3>
-            <div v-if="view == 'tabela'">
+            <div v-show="view == 'tabela'">
                 <time-list></time-list>
             </div>
-            <div v-else>
+            <div v-show="view == 'novoJogo'">
                 <time-jogo></time-jogo>
             </div>
          </div>
@@ -20,7 +20,7 @@ export default {
     `,
     data() {
         return {
-            view: 'novojogo'
+            view: 'tabela'
         }
     },
     methods: {
