@@ -13,13 +13,13 @@ export default {
     <div class="container">
          <div class="row">
             <h3>Campeonato Brasileiro - Série A - 2016</h3>
-            <div v-show="view == 'tabela'">
+            <div v-if="view == 'tabela'">
                 <time-list></time-list>
             </div>
-            <div v-show="view == 'novoJogo'">
+            <div v-if="view == 'novoJogo'">
                 <time-jogo></time-jogo>
             </div>
-            <div v-show="view == 'zona'">
+            <div v-if="view == 'zona'">
                 <time-zona></time-zona>
             </div>
          </div>
