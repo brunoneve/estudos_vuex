@@ -13,7 +13,7 @@ export default {
     <div class="container">
          <div class="row">
             <h3>Campeonato Brasileiro - Série A - 2016</h3>
-            <a class="btn btn-primary" @click="showNovoJogo">Ver tabela</a>
+            <a class="btn btn-primary" @click="showTabela">Ver tabela</a>
             <a class="btn btn-primary" @click="showNovoJogo">Novo jogo</a>
             <a class="btn btn-primary" @click="showZona">Ver zonas</a>
             <br/><br/>
