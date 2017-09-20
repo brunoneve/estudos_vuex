@@ -1,3 +1,6 @@
+
+Studies with vue 2 and vuex. Created mini application, for listing of the Brazilian championship.
+
 # vuex2
 
 > A Vue.js project
